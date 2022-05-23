@@ -64,31 +64,31 @@ for(let i = 0; i< maybe.length; i++) {
 
 }
 
-// // changing my background colors..
-// const form = document.getElementsByName("form");
-// let currentHour = parseInt(moment().format('H'));
+// changing my background colors..
+const form = document.getElementsByName("form");
+let currentHour = parseInt(moment().format('H'));
 
-// Array.from(form).forEach(form => {
-//   let
-//     formIdString = form.id,
-//     formHour;
-//   if (formIdString) {
-//     formHour = parseInt(formIdString);
-//   }
-//   if (formHour) {
-//     // Compares form id to current hour and sets color accordingly
-//     if (currentHour === formHour) {
-//       setColor(form, "red");
-//     } else if ((currentHour < formHour) && (currentHour > formHour - 8)) {
-//       setColor(form, "green");
-//     } else if ((currentHour > fromHour) && (currentHour < formHour + 8)) {
-//       setColor(form, "lightgrey");
-//     } else {
-//       setColor(form, "white");
-//     }
-//   }
-// });
+Array.from(form).forEach(form => {
+  let
+    formIdString = form.id,
+    formHour;
+  if (formIdString) {
+    formHour = parseInt(formIdString);
+  }
+  if (formHour) {
+    // Compares form id to current hour and sets color accordingly
+    if (currentHour === formHour) {
+      setColor(form, "red");
+    } else if ((currentHour < formHour) && (currentHour > formHour - 8)) {
+      setColor(form, "green");
+    } else if ((currentHour > fromHour) && (currentHour < formHour + 8)) {
+      setColor(form, "lightgrey");
+    } else {
+      setColor(form, "white");
+    }
+  }
+});
 
-// function setColor(element, color) {
-//   element.style.backgroundColor = color;
-// }
+function setColor(element, color) {
+  element.style.backgroundColor = color;
+}

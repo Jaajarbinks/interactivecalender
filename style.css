@@ -25,7 +25,12 @@ textarea {
   white-space: pre-wrap;
 }
 
+form {
+  height: 58px;
+}
+
 input {
+  height: 100%;
   text-align: center;
   border-radius: 15px;
   background: forestgreen;
@@ -49,16 +54,17 @@ input {
 }
 
 .present {
-  background-color: #ff6961;
+  background-color: forestgreen;
   color: white;
 }
 
 .future {
-  background-color: #77dd77;
+  background-color: #1a0f7e;
   color: white;
 }
 
 button {
+  height: 60%;
   border-left: 2px solid black;
  border-radius: 60%;
   /* border-top-radius: 15px; */
